@@ -1,0 +1,13 @@
+.bg-img{
+     background-image: url('https://cleancreations.com/data/customfiles/allmenu.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.menus{
+     max-height:500px;
+     overflow-y: scroll;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:20px;
+}

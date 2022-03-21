@@ -1,0 +1,11 @@
+.header {
+  background-image: url("https://cleancreations.com/data/modulesfiles/c05468f3dc8c502a29f7220836926013_item1_image.jpg?md=37ac9e542695bf8315609f74a842f117");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 600px;
+}
+.bg-blur{
+     background:#ffffff8c;
+     padding: 50px;
+}
