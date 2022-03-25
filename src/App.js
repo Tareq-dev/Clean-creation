@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import HowWork from './components/HowWork/HowWork';
 import Menu from './components/Menu/Menu';
 import Navbar from './components/Navbar/Navbar';
-import View from './components/ViewMore/View';
+import Shop from './components/shop/Shop';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <HowWork />
       <Menu />
-      <View/>
+      <Shop />
     </div>
   );
 }
