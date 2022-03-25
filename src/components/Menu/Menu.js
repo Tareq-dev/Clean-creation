@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import SingleMenu from '../SingleMenu/SingleMenu';
 import './Menu.css'
-import SingleMenu from './SingleMenu/SingleMenu';
 
 const Menu = () => {
      const [menus,setMenus] = useState([]);
@@ -11,7 +11,7 @@ const Menu = () => {
      },[])
      return (
           <div className="bg-img p-5 w-100">
-          <div className="mt-5 p-5 bg-white">
+          <div className="mt-5 p-2 bg-white">
               <h2 className="text-center">Online Menu</h2>
               <p className="text-center">Not interested in a plan? Shop our online menu and pick as many or few meals as you need.</p> 
                <div className="menus mt-5 pt-5">
