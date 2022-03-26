@@ -24,7 +24,7 @@ const Shop = () => {
       <h1 className="text-center">View More</h1>
       <div className="canvas">
         <div>
-          <div className="d-flex justify-content-end ">
+          <div className="d-flex justify-content-end">
             <button
               class="btn btn-color"
               type="button"
