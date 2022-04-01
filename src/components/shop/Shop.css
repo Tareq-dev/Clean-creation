@@ -12,3 +12,7 @@
   .canvas-scroll{
     overflow: scroll;
   }
+  .place-order-btn{
+    border-radius: 25px;
+    background-color: #8fd445;
+  }

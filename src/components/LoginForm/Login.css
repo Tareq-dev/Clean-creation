@@ -1,0 +1,9 @@
+.border-radius {
+  border-radius: 25px;
+}
+.border-radius:hover {
+  background-color: #70cefd;
+}
+.login{
+background-color: #9bf8b0;
+}

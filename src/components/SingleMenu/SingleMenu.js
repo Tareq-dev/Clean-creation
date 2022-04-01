@@ -9,7 +9,7 @@ const SingleMenu = (props) => {
                </div>
                <div className="ms-2">
                <h5>{props.menu.name}</h5>
-               <p>{props.menu.description}</p>
+               <p><small>{props.menu.description}</small></p>
                </div>
           </div>
      );

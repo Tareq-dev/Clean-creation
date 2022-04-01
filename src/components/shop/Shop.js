@@ -4,9 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import ViewSinglePd from "../viewSingleProduct/ViewSinglePd";
 import Cart from "../cart/Cart";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  let navigate = useNavigate();
 
   const [cart, setCart] = useState([]);
   useEffect(() => {
@@ -16,11 +20,36 @@ const Shop = () => {
   }, []);
 
   const addToCart = (product) => {
-    const newCart = [...cart, product];
-    setCart(newCart);
+    const exist = cart.find((item) => item.id === product.id);
+    if (!exist) {
+      const newCart = [...cart, product];
+      if (newCart.length < 5) {
+        setCart(newCart);
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "sorry...",
+          text: "You have to add 4 items!",
+        });
+      }
+    }
+  };
+//when you need to delete item by clicking please send the parameter of these name which you pass in the cart component; 
+
+  const handleDelete = (item) => {
+    const rest = cart.filter((pd) => pd.id !== item.id);
+    setCart(rest);
+  };
+  const placeOrderbtn = () => {
+    if (cart.length === 4) {
+      navigate("/login");
+    } else {
+      alert("need Four Meal");
+    }
   };
   return (
     <div>
+      <Navbar />
       <h1 className="text-center">View More</h1>
       <div className="canvas">
         <div>
@@ -55,7 +84,7 @@ const Shop = () => {
               ></button>
             </div>
             {cart.map((item) => (
-              <Cart key={item.id} item={item} />
+              <Cart key={item.id} item={item} handleDelete={handleDelete} />
             ))}
             <div>
               <hr />
@@ -67,12 +96,21 @@ const Shop = () => {
                 <p>Tax : ${}</p>
                 <h4>Grand Total : ${}</h4>
               </div>
+              <hr />
+              <div className="d-flex justify-content-center">
+                <button
+                  onClick={placeOrderbtn}
+                  className="border-0 px-2 fs-6 place-order-btn"
+                >
+                  Place Order
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div className="views p-5 m-5">
+        <div className="views p-5">
           {products.map((pd) => (
             <ViewSinglePd addToCart={addToCart} key={pd.id} product={pd} />
           ))}

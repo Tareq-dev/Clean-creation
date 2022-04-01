@@ -1,19 +1,16 @@
-import './App.css';
-import Header from './components/Header/Header';
-import HowWork from './components/HowWork/HowWork';
-import Menu from './components/Menu/Menu';
-import Navbar from './components/Navbar/Navbar';
-import Shop from './components/shop/Shop';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Shop from "./components/shop/Shop";
+import Main from "./components/Main/Main";
+import Login from "./components/LoginForm/Login";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <HowWork />
-      <Menu />
-      <Shop />
-    </div>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Main />} />
+      <Route path="/menu" element={<Shop></Shop>} />
+    </Routes>
   );
 }
 
