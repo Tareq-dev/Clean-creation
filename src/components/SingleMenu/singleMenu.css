@@ -1,10 +1,35 @@
 .menu {
-  height: 200px;
-  border-radius: 15px;
+  height: 180px;
+  margin-bottom: 10px;
+  border-radius: 10px 15px;
 }
 
 .menu img {
-  height: 200px;
-  width: 150px;
-  border-radius:0px 15px;
+  object-fit: cover;
+  border-radius: 6px 0 0 6px;
+  width: 123px;
+  height: 178px;
+}
+.menu-content {
+  position: relative;
+  padding-left: 10px;
+}
+
+.star-fa {
+  color: #fde010;
+  margin-top: -20px;
+}
+@media screen and (max-width: 550px) {
+  .menu {
+    height: 165px;
+    border-radius: 0px 15px;
+  }
+  .menu img {
+    width: 123px;
+    height: 163px;
+    border-radius: 0px 15px;
+  }
+  .menu-content p {
+    font-size: 0.875em;
+  }
 }

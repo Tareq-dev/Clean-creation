@@ -110,7 +110,7 @@ const Shop = () => {
         </div>
       </div>
       <div>
-        <div className="views p-5">
+        <div className="views p-3">
           {products.map((pd) => (
             <ViewSinglePd addToCart={addToCart} key={pd.id} product={pd} />
           ))}

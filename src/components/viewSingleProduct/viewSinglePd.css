@@ -6,3 +6,12 @@
   background-color: #8fd445;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 550px) {
+  .para p {
+   font-size: 12px;
+  }
+  .cart-icon{
+  font-size: 18px;
+  }
+}

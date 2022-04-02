@@ -1,0 +1,15 @@
+.woman {
+  background-image: url("https://cleancreations.com/data/customfiles/section8.png");
+  width: 100%;
+  height: 100%;
+  background-size: 420px 280px;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+.learn {
+  background-color: #8fd445;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 8px;
+}

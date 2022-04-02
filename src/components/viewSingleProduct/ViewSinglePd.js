@@ -9,10 +9,10 @@ const ViewSinglePd = ({ product , addToCart }) => {
       <div>
         <img src={product.img} alt="img" />
       </div>
-      <div className="ms-2 p-2">
+      <div className="para ms-2 p-2">
         <h5>{product.name}</h5>
         <p>{product.description}</p>
-        <button className="cart-icon" onClick={() =>addToCart(product)}><FontAwesomeIcon icon={faShoppingCart} /></button>
+        <button className="cart-icon" onClick={() =>addToCart(product)}>Add to Cart  <FontAwesomeIcon className="text-secondary" icon={faShoppingCart} /> </button>
       </div>
     </div>
   );

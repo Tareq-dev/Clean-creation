@@ -12,3 +12,26 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8fd445; 
+  border-radius: 10px;
+}
+@media screen and (max-width:550px){
+  .menus{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bg-img {
+    background-size: 500px 100%;
+  }
+}

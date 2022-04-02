@@ -1,18 +1,23 @@
 .views {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 20px;
-   }
-   
-   .canvas {
-    position: sticky;
-    top: 0;
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.canvas {
+  position: sticky;
+  top: 0;
+}
+.canvas-scroll {
+  overflow: scroll;
+}
+.place-order-btn {
+  border-radius: 25px;
+  background-color: #8fd445;
+}
+
+@media screen and (max-width: 550px) {
+  .views {
+    grid-template-columns: 1fr;
   }
-  .canvas-scroll{
-    overflow: scroll;
-  }
-  .place-order-btn{
-    border-radius: 25px;
-    background-color: #8fd445;
-  }
+}
