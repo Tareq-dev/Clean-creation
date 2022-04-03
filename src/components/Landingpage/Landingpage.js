@@ -41,7 +41,7 @@ const Landingpage = () => {
       </section>
       <section className="mt-5">
         <div className="woman">
-          <div className="p-3 shadow w-75 bg-light mt-3">
+          <div className="p-3 content shadow bg-light mt-2">
             <h4>
               Our mission is to make clean eating delicious and convenient for
               everyone.

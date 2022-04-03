@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Landingpage from '../Landingpage/Landingpage';
 import Navbar from '../Navbar/Navbar';
@@ -13,6 +14,7 @@ const Main = () => {
           <HowWork />
           <Menu />
           <Landingpage />
+          <Footer />
           </div>
      );
 };

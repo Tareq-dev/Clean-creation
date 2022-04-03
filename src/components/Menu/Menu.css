@@ -26,6 +26,9 @@
   background: #8fd445; 
   border-radius: 10px;
 }
+.btn-green{
+  background-color:#8fd445;
+}
 @media screen and (max-width:550px){
   .menus{
     display: grid;

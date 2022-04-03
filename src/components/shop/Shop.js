@@ -50,7 +50,7 @@ const Shop = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="text-center">View More</h1>
+      <h1 className="text-center">Menus</h1>
       <div className="canvas">
         <div>
           <div className="d-flex justify-content-end">

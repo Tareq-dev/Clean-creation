@@ -4,7 +4,7 @@ import "./Plan.css";
 const Plan = (props) => {
   const { name, content, price } = props.plan;
   return (
-    <div className="card-plan col-md-2 mx-2 p-2 text-center">
+    <div className="card-plan col-md-2 mt-2 mx-2 p-2 text-center">
       <div>
         <h6>{name}</h6>
         <p>{content}</p>

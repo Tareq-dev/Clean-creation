@@ -28,7 +28,7 @@ const Menu = () => {
         <div className="d-flex d-flex justify-content-center">
           <button
             onClick={() => navigate("/menu")}
-            className="bg-info mt-3 mb-4 border-0 rounded py-2 px-3 fw-bold shadow-lg"
+            className="btn-green mt-3 mb-4 border-0 rounded py-2 px-3 fw-bold shadow-lg"
           >
             View Enter Menu
           </button>

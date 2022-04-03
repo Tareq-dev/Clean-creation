@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -20,32 +21,25 @@ function Navbar() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse  d-flex justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link class="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
+                <Link class="nav-link" to="/menu">
+                  Menu
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <Link class="nav-link" to="/about">
                   Pricing
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
