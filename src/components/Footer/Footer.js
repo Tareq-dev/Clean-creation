@@ -10,7 +10,6 @@ const Footer = () => {
         <div className="col-md-6 col-12 mx-4 mt-3 mb-5">
           <h2>Clean Creations</h2>
           <div>
-          
             <p className="pb-0 mb-0 lh-1">+088 01905243744</p>
             <p className="pb-0">
               <small>tareque.dev@gmail.com</small>
