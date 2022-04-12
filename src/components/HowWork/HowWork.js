@@ -5,9 +5,9 @@ const HowWork = () => {
   return (
     <div className="mt-5">
       <h2 className="text-center">How It Works</h2>
-      <div class="row mt-3 work d-flex justify-content-center p-3 ">
-        <div class="col-md-3 col-12 border p-2 shadow-sm rounded-3">
-          <div class="d-flex justify-content-center">
+      <div className="row mt-3 work d-flex justify-content-center p-3 ">
+        <div className="col-md-3 col-12 border p-2 shadow-sm rounded-3">
+          <div className="d-flex justify-content-center">
             <img
               src="https://cleancreations.com/data/config/theme_howitworks_item1_image.svg?md=a90764e4d1943d70ade260f7af365720"
               alt="place-order"

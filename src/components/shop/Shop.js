@@ -6,7 +6,6 @@ import ViewSinglePd from "../viewSingleProduct/ViewSinglePd";
 import Cart from "../cart/Cart";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -49,13 +48,12 @@ const Shop = () => {
   };
   return (
     <div>
-      <Navbar />
       <h1 className="text-center">Menus</h1>
       <div className="canvas">
         <div>
           <div className="d-flex justify-content-end">
             <button
-              class="btn btn-color"
+              className="btn btn-color"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
@@ -68,17 +66,17 @@ const Shop = () => {
             </button>
           </div>
           <div
-            class="offcanvas offcanvas-end canvas-scroll p-2"
+            className="offcanvas offcanvas-end canvas-scroll p-2"
             tabindex="-1"
             id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel"
           >
-            <div class="offcanvas-header">
+            <div className="offcanvas-header">
               <h5 id="offcanvasRightLabel">Cart Info</h5>
 
               <button
                 type="button"
-                class="btn-close text-reset"
+                className="btn-close text-reset"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
