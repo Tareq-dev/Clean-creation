@@ -8,7 +8,7 @@ import {
   useSignInWithFacebook,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Login = () => {
@@ -20,9 +20,13 @@ const Login = () => {
   const [signInWithEmailAndPassword, error] =
     useSignInWithEmailAndPassword(auth);
   const [user] = useAuthState(auth);
+  const location = useLocation();
+
+
+  const from = location?.state?.from?.pathname || "/";
 
   if (user) {
-    navigate("/menu");
+    navigate(from , {replace:true});
   }
   const handleUserLogging = (event) => {
     event.preventDefault();

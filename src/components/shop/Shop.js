@@ -41,7 +41,7 @@ const Shop = () => {
   };
   const placeOrderbtn = () => {
     if (cart.length === 4) {
-      navigate("/login");
+      navigate("/shipment");
     } else {
       alert("need Four Meal");
     }

@@ -41,6 +41,11 @@ function Navbar() {
                   Menu
                 </Link>
               </li>
+              {user && <li className="nav-item">
+              <Link className="nav-link" to="/track">
+                Track
+              </Link>
+            </li>}
               <li className="nav-item">
                 {user ? (
                   <div>
